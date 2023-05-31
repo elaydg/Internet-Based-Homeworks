@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Inputs in HTML">
+    <meta name="description" content="Homework number 3">
+    <meta name="generator" content="Ela">
+    <meta name="keywords" content="HTML, CSS, web development, internet based programming">
+
+    <title>Homework3</title>
+
+    <style>
+        body{
+            background-color: darksalmon;
+        }
+    </style>
+
+    <script>
+        function fetch(){
+            let get = document.getElementById("get").value;
+            document.getElementById("put").value=get;
+        }
+    </script>
+
+    <style>
+        label[for="mail"]{
+            padding-left: 20px;
+        }
+    </style>
+
+    <style>
+        label[for="age"]{
+            padding-left: 20px;
+        }
+    </style>
+
+    <style>
+        label[for="search"]{
+            padding-left: 300px;
+        }
+    </style>
+
+    <style>
+        label[for="week"]{
+            padding-left: 1201px;
+
+        }
+    </style>
+
+    <style>
+        label[for="datetime"]{
+            padding-left: 1201px;
+        }
+    </style>
+
+    <style>
+        .image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+        }
+    </style>
+
+    <style>
+        .rating{
+            text-align: center;
+        }
+    </style>
+
+
+
+</head>
+<body>
+
+<form action="">
+    <label for="phone number">
+        phone number
+        <input type="tel" pattern="[0-9]{10}" placeholder="enter your phone number">
+        <input type="submit" value="submit" id="phone number">
+    </label>
+    <label for="mail">
+        e-mail
+        <input type="email" placeholder="enter your e-mail">
+        <input type="submit" value="submit" id="mail">
+    </label>
+    <label for="age">
+        age
+        <input type="number" value="0" min="0">
+        <input type="submit" value="submit" id="age">
+    </label>
+    <form action="https://www.google.com/search" method="get">
+        <label for="search">
+            ❏ search:
+            <input type="search">
+            <input type="submit" value="submit" id="search">
+            <input type="hidden">
+        </label>
+    </form>
+
+    <label for="week"> ❏ select a week:</label>
+    <input type="week" id="week" name="week-input">
+    <br>
+    <label for="datetime"> ❏ select date and time:</label>
+    <input type="datetime-local" id="datetime" name="datetime-input">
+
+    <img class= "image" src= "programmer.jpg" height="400" title="meme";>
+
+    <br>
+    <div class="rating">
+        <label for="rate">
+            rate my website 0 to 10
+            <input type="range" min="0" max="10" id="get" step="1" onchange="fetch()"><br>
+            <input type="text" id="put">
+            <input type="submit" value="submit" id="rate">
+        </label>
+    </div>
+    <a href="https://github.com/elaydg"> ☛ Github</a>
+    <br>
+
+
+    <label for="month-input"> ☛ select a month:</label>
+    <input type="month" id="month-input" name="month-input">
+    <br>
+    <label for="time-input"> ☛ select a time:</label>
+    <input type="time" id="time-input" name="time-input">
+
+
+</form>
+
+</body>
+</html>
